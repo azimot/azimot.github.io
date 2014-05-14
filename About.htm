@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Jitsi (SIP Communicator) | Main / About </title>
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <link rel="shortcut icon" href="http://jitsi.org/wiki/pub/skins/simple/i/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://jitsi.org/wiki/pub/skins/simple/i/favicon.ico" type="image/x-icon">
+  <!-- link rel='stylesheet' href='http://jitsi.org/wiki/pub/skins/simple/pmwiki.css' type='text/css' / -->
+  <link rel="stylesheet" href="About_files/simple.css" type="text/css">
+  <!--[if IE 6]><link type="text/css" rel="stylesheet" href="css/ie6.css" /><![endif]-->
+  <!--HTMLHeader--><style type="text/css"><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .apprlink { font-size:smaller; }
+span.anchor {
+	float: left;
+	font-size: 10px;
+	margin-left: -10px;
+	width: 10px;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-20px; list-style: none; }
+ol.toc ol.toc { text-indent:-40px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; padding-bottom: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-13px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    padding: 5px; border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    margin-top:-5px;   padding-top: 5px;
+    margin-left:-5px;  padding-left: 5px;
+    margin-right:-5px; padding-right: 5px;
+    padding-bottom: 3px;
+    border-bottom:  1px dotted #cccccc; }
+div.breaklist { text-align: right; }
+div.breaklist strong { background-color: yellow; }
+div.breakpage { text-align: right; }.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><script type="text/javascript">
+function toggle(obj) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML = "hide";
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML = "show";
+    }
+}
+</script><link rel="stylesheet" href="About_files/markup.css" type="text/css">
+
+  <link href="About_files/commentboxplus.css" rel="stylesheet" type="text/css">  <meta name="robots" content="index,follow">
+
+<!-- google analytics tracker -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="About_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-319188-1");
+pageTracker._trackPageview();
+</script>
+<!-- end google analytics tracker -->
+
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+    startList = 
+    	function() 
+        {
+        	if (document.all && document.getElementById) {
+            	navRoot = document.getElementById("menu");
+                for (i = 0; i < navRoot.childNodes.length; i++) {
+                	node = navRoot.childNodes[i];
+                    if (node.nodeName == "LI") {
+                    	node.onmouseover = 
+                        	function() { this.className += " over"; }
+                        node.onmouseout = 
+                        	function() { this.className = this.className.replace(" over", ""); }
+                    }
+                }
+            }
+        }
+	window.onload = startList;
+    //--><!]]>
+</script>
+
+<script language="JavaScript1.1">
+<!--
+	first = 1;
+    last = 6;
+    current = 0;
+    var slideTimerId = 0;
+	var buttonLink = "";
+    var osName="Unknown OS";
+            
+    function nextPicture()
+	{
+	    removeCurrent();
+
+	    // Show next picture, if last, loop back to front
+    	if (current == last) { current = 1; }
+        else { current++ }
+
+		addCurrent();
+		
+		restartTimer();	
+	}
+
+    function previousPicture()
+	{
+		removeCurrent();
+
+        if (current == first) { current = last; }
+        else { current--; }
+        
+		addCurrent();
+
+		restartTimer();	
+	}
+	
+	function goToSlide(index)
+	{         
+		removeCurrent();
+
+        current = index;
+
+        addCurrent();
+
+		restartTimer();	
+	}
+	
+	function removeCurrent()
+	{
+		if (current != 0)
+		{
+	    	// Hide current picture
+    	    object = document.getElementById('slide' + current);
+        	object.style.display = 'none';
+ 
+			fade('slide' + current);
+
+            object = document.getElementById('dot' + current);
+	        object.style.backgroundImage = "url(http://jitsi.org/wiki/pub/sip-communicator/dot.png)";
+		}
+	}
+	
+	function addCurrent()
+	{
+		object = document.getElementById('slide' + current);
+		object.style.opacity = 0;
+        object.style.display = 'block';
+
+        fade('slide' + current);
+
+		object = document.getElementById('dot' + current);
+        object.style.backgroundImage = "url(http://jitsi.org/wiki/pub/sip-communicator/dotSelected.png)";
+	}
+
+	function restartTimer()
+	{
+		clearTimeout(slideTimerId);
+		slideTimerId = setTimeout("slideit()", slideshowspeed);
+	}
+
+	var TimeToFade = 500.0;
+
+	function fade(eid)
+	{
+	  	var element = document.getElementById(eid);
+  		if(element == null)
+    		return;
+   
+  		if(element.FadeState == null)
+  		{
+    		if(element.style.opacity == '1')
+		    {
+      			element.FadeState = 2;
+    		}
+    		else if (element.style.opacity == null
+					|| element.style.opacity == '0'
+					|| element.style.opacity == '')
+    		{
+      			element.FadeState = -2;
+    		}
+  		}
+    
+  		if(element.FadeState == 1 || element.FadeState == -1)
+  		{
+    		element.FadeState = element.FadeState == 1 ? -1 : 1;
+    		element.FadeTimeLeft = TimeToFade - element.FadeTimeLeft;
+  		}
+  		else
+  		{
+    		element.FadeState = element.FadeState == 2 ? -1 : 1;
+    		element.FadeTimeLeft = TimeToFade;
+    		setTimeout("animateFade(" + new Date().getTime() + ",'" + eid + "')", 33);
+  		}  
+	}
+
+	function animateFade(lastTick, eid)
+	{  
+  		var curTick = new Date().getTime();
+		var elapsedTicks = curTick - lastTick;
+  
+  		var element = document.getElementById(eid);
+ 
+  		if(element.FadeTimeLeft <= elapsedTicks)
+  		{
+    		element.style.opacity = element.FadeState == 1 ? '1' : '0';
+    		element.style.filter = 'alpha(opacity = ' 
+        		+ (element.FadeState == 1 ? '100' : '0') + ')';
+	    	element.FadeState = element.FadeState == 1 ? 2 : -2;
+		    return;
+  		}
+ 
+	  	element.FadeTimeLeft -= elapsedTicks;
+  		var newOpVal = element.FadeTimeLeft/TimeToFade;
+  		if(element.FadeState == 1)
+	    	newOpVal = 1 - newOpVal;
+
+  		element.style.opacity = newOpVal;
+ 	 	element.style.filter = 'alpha(opacity = ' + (newOpVal*100) + ')';
+  
+	  	setTimeout("animateFade(" + curTick + ",'" + eid + "')", 33);
+	}
+	
+	function createCORSRequest(method, url)
+	{
+    	var xhr = new XMLHttpRequest();
+	    if ("withCredentials" in xhr)
+		{
+    	    xhr.open(method, url, true);
+	    }
+		else if (typeof XDomainRequest != "undefined")
+		{
+        	xhr = new XDomainRequest();
+        	xhr.open(method, url);
+	    }
+		else
+		{
+        	xhr = null;
+    	}
+    	return xhr;
+	}
+
+	function createDownloadText()
+	{
+		if (navigator.appVersion.indexOf("Win")!=-1)
+			osName="Windows";
+		if (navigator.appVersion.indexOf("Mac")!=-1)
+			osName="Mac OS X";
+		if (navigator.appVersion.indexOf("X11")!=-1)
+			osName="Unix";
+		if (navigator.appVersion.indexOf("Linux")!=-1)
+			osName="Linux";
+		
+		return "Get Jitsi for " + osName;
+	}
+
+	function getOsName()
+	{
+	    var os = "";
+		if (navigator.appVersion.indexOf("Win")!=-1)
+			os="windows";
+		if (navigator.appVersion.indexOf("Mac")!=-1)
+			os="macosx";
+		if (navigator.appVersion.indexOf("Linux")!=-1)
+			os="linux";
+		
+		return os;
+	}
+
+	function getDownloadURL()
+	{
+	    var url = "";
+		if (navigator.appVersion.indexOf("Win")!=-1)
+			url="http://download.jitsi.org/nightly/windows/";
+		if (navigator.appVersion.indexOf("Mac")!=-1)
+			url="http://download.jitsi.org/nightly/macosx/";
+		if (navigator.appVersion.indexOf("Linux")!=-1)
+			url="http://download.jitsi.org/nightly/linux/";
+		
+		return url;
+	}
+
+    function createDownloadLink()
+	{
+		var txtFile = createCORSRequest("get", getDownloadURL() + "versionupdate.properties");
+        txtFile.onreadystatechange = function()
+        {
+            if (txtFile.readyState == 4)
+            {  // Makes sure the document is ready to parse.
+				display_all(txtFile.responseText);
+                buttonLink = getDownloadURL() + txtFile.responseText;
+            }
+        }
+        txtFile.send();
+	}
+
+	function display_column(str_line, n)
+	{
+   		document.write("<p>" + str_line.split('\t')[n - 1]);
+	}
+
+	function display_all(data)
+	{
+   		var i, x = data.split('\n');
+	   	for (i = 0; i < data.length; i++)
+		{
+      		display_column(data[i], 1);
+	      	// it's 1 because you only want to display the 1st column..
+      		// unless I misunderstood your question..
+   		}
+	}
+
+	function download()
+	{
+		window.open(buttonLink);
+	}
+//-->
+</script>
+
+</head>
+<body class="About">
+<!--PageHeaderFmt-->
+  	<div id="wrapper">
+		<div id="header">
+			<!--ul id="headernavigation">
+						<li class="left"><a href="#">Sitemap</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="search"><form action='http://jitsi.org/index.php' style="padding:0; margin:0"><input type='hidden' name='n' value='Main.About' /><input type='hidden' name='action' value='search' /><input type="text" name="q" onblur="if(this.value=='')this.value='Search...';" onfocus="if(this.value=='Search...')this.value=''" value="Search..." class="text" /><input type="submit" value="" class="submit"/></form></li>
+			</ul-->
+		</div>
+		
+		<div id="right">
+			<a href="http://www.jitsi.org/index.php">
+				<img style="position: absolute; top: 0px; z-index: 1; width: 406px; height: auto;" src="About_files/logo2.png">
+			</a>
+		</div>
+        <div id="menu" style="display: block;">
+            <span id="popupmenu" style="float: left;">
+			    <ul id="navigation">
+            		<li class="first" id="Main"><a class="mainmenu" href="http://jitsi.org/index.php/Main/SideBar"><span>Jitsi</span></a>
+                    	<ul><li><a class="wikilink" href="http://jitsi.org/index.php/Main/HomePage">Home</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/News">News</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/Download">Download</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/Screenshots">Screenshots</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/Features">Features</a>
+</li><li><a class="urllink" href="http://jit.si/" rel="nofollow">XMPP Service</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/FMJ">FMJ</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/Partners">Partners</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Main/Goodies">Goodies</a>
+</li><li><a class="selflink" href="http://jitsi.org/index.php/Main/About">About</a>
+</li></ul>
+
+                    </li>
+                    <li id="Download"><a class="mainmenu" href="http://jitsi.org/index.php/Main/Download"><span>Download</span></a>
+						
+					</li>
+                    <li id="Development"><a class="mainmenu" href="http://jitsi.org/index.php/Development/SideBar"><span>Development</span></a>
+                    	<ul><li><a class="wikilink" href="http://jitsi.org/index.php/Development/MailingLists">Mailing Lists</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Development/Gsoc2011">Google Summer of Code</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Development/VersionControl">Source Code (SVN)</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Development/BugsAndIssues">Bugs and Issues</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Development/TeamAndContributors">Team and Contributors</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Development/Roadmap">Roadmap</a>
+</li><li><a class="urllink" href="http://bluejimp.com/jitsi/stats" rel="nofollow">Statistics with StatSVN</a>
+</li><li><a class="urllink" href="https://jitsi.java.net/" rel="nofollow">Java.net project page</a>
+</li></ul>
+
+					</li>
+					<li id="Documentation"><a class="mainmenu" href="http://jitsi.org/index.php/Documentation/SideBar"><span>Documentation</span></a>
+						<ul><li><a class="wikilink" href="http://jitsi.org/index.php/Documentation/DeveloperDocumentation">Developer Documentation</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Documentation/FAQ">FAQ</a>
+</li><li><a class="wikilink" href="http://jitsi.org/index.php/Documentation/ZrtpFAQ">ZRTP and SRTP FAQ</a>
+</li></ul>
+
+					</li>
+					<li class="last" id="Support"><a class="mainmenu" href="http://jitsi.org/index.php/Commercial/SideBar"><span>Support</span></a>
+						<ul><li><a class="wikilink" href="http://jitsi.org/index.php/Commercial/Companies">Support and Custom Development</a>
+</li></ul>
+
+					</li>
+				</ul>
+			</span>
+			<div class="clear"></div>
+		</div>
+			<div id="menubar" style="display: block;">
+				<div>
+			      	<span>
+				    	<a href="http://jitsi.org/index.php/Main/About?action=edit" accesskey="e" style="display: none;">&gt;Edit Page</a>
+		    			
+			        </span>
+				</div>
+     			<div class="clear"></div>
+		    </div>
+
+		<div id="content">
+	
+			<!--PageText-->
+<div id="wikitext">
+<h1>About</h1>
+<p>Jitsi is an audio/video Internet phone and instant messenger written 
+in Java. It supports some of the most popular instant messaging and 
+telephony protocols such as SIP, Jabber/XMPP (and hence Facebook and 
+Google Talk), AIM, ICQ, MSN, Yahoo! Messenger, IRC, Bonjour and soon 
+others like IAX. 
+</p>
+<p class="vspace">The development of Jitsi started at the <a class="urllink" href="http://www.unistra.fr/index.php?id=unistra_en" rel="nofollow"> University of Strasbourg</a>,
+ France. Originally the project was known as SIP Communicator. 
+Throughout the years our community has grown to include members and 
+contributors from Brazil, Bulgaria, Cameroon, China, France, Estonia, 
+India, Germany, Japan, Romania, Spain, UK, USA, and others. 
+</p>
+<p class="vspace">Jitsi is based on the <a class="urllink" href="http://osgi.org/" rel="nofollow"> OSGi</a> architecture using the <a class="urllink" href="http://felix.apache.org/" rel="nofollow"> Felix</a> implementation from Apache. This makes it very extensible and particularly developer friendly.
+</p>
+<div class="vspace"></div><h1>Some more history</h1>
+<p>Through the years, the project changed its name more than once. It 
+was originally called JsPhone and was one of the examples in the <a class="urllink" href="http://jain-sip.dev.java.net/" rel="nofollow"> JAIN SIP</a>
+ reference implementation project. It then moved out to a life of its 
+own as a separate project on java.net. That&#8217;s when it became SIP 
+Communicator. At the time it was mostly doing audio/video calls through 
+SIP and hence the name. It was one of the first to support IPv6 
+telephony.
+</p>
+<p class="vspace">Near the end of 2005 SIP Communicator was completely rearchitectured and a new <a class="urllink" href="http://www.osgi.org/" rel="nofollow"> OSGi</a> based design was chosen so that plugins could be easily written for the project. 
+</p>
+<p class="vspace">In 2011, after successfully adding support for 
+Audio/Video communication over XMPP&#8217;s Jingle extensions, the project was
+ renamed to Jitsi since it was no longer a SIP only Communicator
+</p>
+<p class="vspace">Acknowledgement:<br>Jitsi and <a class="urllink" href="http://jain-sip.dev.java.net/" rel="nofollow"> JAIN SIP</a> projects, though administratively separate, are still in close collaboration.
+</p>
+<p class="vspace">Jitsi was originally created by Emil Ivov who was at 
+the time a student at the University of Strasbourg, France. Today the 
+core team has grown and counts developers and contributors from all over
+ the world. A complete list of those may be found in the <a class="wikilink" href="http://jitsi.org/index.php/Development/TeamAndContributors">Team and Contributors</a> section.
+</p>
+</div>
+	
+			<div id="clear"></div>	
+		</div>
+		<div id="push"></div>
+	</div>
+		
+		<div id="footer">
+			<div id="footerwrap">
+					<br style="clear:both">
+					<div class="fcleft">Jitsi is distributed under the terms of the LGPL</div> 
+					<!--div class="fccontact">
+						<b>Contacts</b><br/>
+						mail: contact@bluejimp.com<br/>
+                                                sip: bluejimp@ippi.fr<br/>
+						phone France: +33 1 77 62 43 30<br/>
+						phone USA: +1 415 762 0439
+					</div>
+					<div class="fccontact">
+						<b>Head Office - France</b><br/>
+						Strasbourg, France<br/><br/>
+						phone: +33 1 77 62 43 30<br/>
+						fax: +33 1 77 62 47 31
+					</div>
+					<div class="fccontact">
+                        <b>Bulgarian Branch</b><br/>
+                        34 Nikolay Haitov Str.<br/>
+                        1172 Sofia, Bulgaria<br/>
+                        phone: +359 2 868 75 74<br/>
+                        phone: +359 2 868 88 49
+                    </div-->
+					<div class="fcright">
+					Powered by: <a href="http://pmwiki.org/" rel="external">pmwiki</a>
+					<br>
+					</div>
+					</div>
+			</div>
+
+
+</body></html>

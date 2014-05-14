@@ -1,0 +1,1014 @@
+/*
+
+//
+// Copyright (C) Julian I. Kamil <julian.kamil@gmail.com>
+// No warranty is provided.  Use at your own risk.
+//
+// Name: simple.css
+// Author: Julian I. Kamil <julian.kamil@gmail.com>
+// Created: 2005-05-18
+// Description:
+//     This is a simple skin for PmWiki.
+//
+// History:
+//     2005-05-18  jik  Created.
+//     2005/06/27  jik  Added SkinTone feature.
+//     2005/07/08  jik  Made the #text monospace.
+//
+
+*/
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+* {outline:none;}
+
+body {
+	background-color: #FFF;
+	background-image: url(i/bgr.jpg);
+	background-repeat: repeat-x;
+	margin:0 auto;
+	text-align:center;
+	font-family:Verdana,Tahoma,Arial;
+	font-size:12px;
+	color:#000;
+	line-height:16px;
+}
+
+
+div, li, img, a, a img {
+	text-decoration:none;
+	border:none;
+	outline:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background-image: url(i/leaf.gif);
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	font-family:Verdana,Tahoma,Arial;
+	color:#e67300;
+	padding-bottom:10px;
+	text-align:left;
+	}
+
+h1 {font-size:18px}
+h2 {font-size:16px}
+h3 {font-size:14px}
+h4 {font-size:12px}
+h5 {font-size:10px}
+h6 {font-size:8px}
+
+p {
+	margin:0;
+	padding-bottom:10px;
+	font-family:Verdana,Tahoma,Arial;
+	font-size:12px;
+	line-height:16px;
+	color:#000;
+}
+	
+a {
+	font-size:12px;
+	font-family:Verdana,Tahoma,Arial;
+	color:#3b73a6;
+	text-decoration:none;
+}
+	
+a:hover {text-decoration:underline;}
+
+ul {
+	display: block;
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+	line-height:16px;
+	padding-bottom:10px;
+	}
+
+div#content ul li {
+	color:#3b73a6;
+	margin:0px;
+	margin-left:5px;
+	padding:0;
+	background-image: url(i/bullet.jpg);
+	background-position:left 4px;
+	background-repeat:no-repeat;
+	padding-left:18px;
+	}
+
+div#content ul li.va {
+	margin-top:10px;
+	}
+
+div#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -200px;
+	width:1100px;
+	text-align:left;
+}
+
+div#footer, div#push {
+	height:200px;
+}
+
+div#clear {
+	clear:both;
+}
+
+div.clear{
+	clear: both;
+}
+
+/* HEADER AND CONTENT */
+
+div#header {
+	width:1000px;
+	color:#FFF;
+	display:block;
+	height:86px;
+	background-image: url(i/header.jpg);
+}
+
+div#header ul#headernavigation {
+	background-image: url(i/hmenubgr.jpg);
+	background-repeat: repeat-x;
+	height:28px;
+	margin-right:44px;
+	float:right;
+	font-family:Arial;
+	}
+
+div#header ul#headernavigation li {
+	float:left;
+	display:inline-block;
+	font-size:13px;
+	color:#47618a;
+	list-style-type:none;
+	margin-right:25px;
+	height:23px;
+	padding-top:5px;
+	}
+
+div#header ul#headernavigation li a {
+	font-size:13px;
+	color:#47618a;
+	display:inline-block;
+	height:28px;
+	text-decoration:none;
+	}
+	
+div#header ul#headernavigation li a:hover {
+	text-decoration:underline;
+	}
+	
+div#header ul#headernavigation li.left {
+	background-image: url(i/hmenuleft.jpg);
+	background-repeat: no-repeat;
+	background-position:left top;
+	padding-left: 20px;
+	}
+
+div#header ul#headernavigation li.search {
+	float:left;
+	font-size:13px;
+	color:#FFF;
+	list-style-type:none;
+	margin-right:0px;
+	margin-top:0px;
+	padding-top:0px;
+	}
+
+div#header ul#headernavigation li input.text {
+	background:transparent url(i/hmenusrch.jpg) no-repeat scroll left top;
+	border:0 none;
+	font-family:Verdana,Arial;
+	color:#c1c9d4;
+	font-size:12px;
+	height:20px;
+	line-height:15px;
+	float:left;
+	width:103px;
+	margin:0;
+	padding:8px 0 0 8px;
+}
+
+div#header ul#headernavigation li input.submit {
+	background:transparent url(i/hmenubutton.jpg) no-repeat scroll center center;
+	border:0 none;
+	color:#282108;
+	float:left;
+	cursor:pointer;
+	font-size:12px;
+	font-family:Verdana,Arial;
+	height:28px;
+	width:43px;
+	margin:0; padding:0;
+}
+
+#sidebar ul { 
+    list-style: none outside; 
+    margin: 0px; 
+    padding: 0px;
+}
+
+ul.square { list-style: square outside; margin: 0 0 0 16px; padding: 0 0 1em 0; }
+ul.circle { list-style: circle outside; margin: 0 0 0 16px; padding: 0 0 1em 0; }
+
+#sidebar li { 
+    padding-bottom: 2px; 
+    font-weight: bold;
+    color: #666;
+    font-size: 10px;
+}
+
+div.clearer{
+    clear: both; 
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+    height: 0; 
+    line-height: 1px; 
+    font-size: 1px;
+}
+
+#copyright {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 8pt;
+}
+
+.vspace { margin-top: 4px; margin-bottom: 4px; }
+p.vspace { padding-top: 3px; padding-bottom: 3px; }
+
+a { text-decoration:none; color: #00f; }
+a:visited { text-decoration:none; color: #00f; }
+a:hover { text-decoration:underline; color: #00f; }
+a:active { color: #00f; }
+
+a.buttonLink:hover { text-decoration:none; }
+
+#header a { color: #ddd; }
+
+table {
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 12px;
+}
+
+table tr td {
+    padding: 4px;
+}
+
+table tr td h1,
+table tr td h2,
+table tr td h3,
+table tr td h4,
+table tr td h5,
+table tr td h6
+{
+    text-align:center;
+}
+
+.toctitle {
+    font-size: 8pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px none #ddd;
+}
+
+div.toc {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.toc ol {
+    font-size: 8pt;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 12px;
+    padding-left: 12px;
+    list-style-type: decimal;
+}
+
+.toc ol ol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.toc ol li {
+    margin-left: 8px;
+}
+
+#text {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: monospace;
+}
+
+hr {
+    border: 0px;
+    height: 1px;
+    background-color: #ccc;
+    color: #ccc;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+p.question {
+    font-weight: bold;
+}
+
+a.createlink { 
+    text-decoration:none; 
+    position:relative; 
+    top:-0.5em;
+    font-size:smaller; 
+    border-bottom:none; 
+    }
+
+a.createlinktext { 
+    text-decoration:none; 
+    border-bottom:1px dotted #ccc; 
+}
+
+#wikidiff {
+    border: 1px none #bbb;
+    padding-top: 12px;
+    font-size: 8pt;
+}
+
+.diffbox {
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+
+.difftime {
+    background-color: #eee;
+}
+
+.diffrestore {
+    padding-bottom: 12px;
+}
+
+.difftime, .difftype, .diffdel, .diffadd {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.diffdel, .diffadd {
+    border: 1px dotted #ddd;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ol {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#wikitext pre {
+    font-family: monospace;
+    font-size: 9pt;
+    background: #eee;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wikiedit form {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wikiedit textarea {
+    width: 100%;
+    height: 600px;
+    font-size: 9pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+#editaction {
+    padding: 0px;
+    margin: 0px;
+}
+
+#editaction tr td {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+div#menubar
+{
+padding-top:-30px;
+}
+
+#editaction a {
+    font-weight: bold;
+}
+
+/* POPUP MENU */
+
+#popupmenu ul#navigation li:hover ul {
+    display: block;
+    margin-top: 10px; /* original value : 10px */
+    background: #444;
+    z-index:2;
+    -moz-opacity:0.7;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+#popupmenu ul#navigation li ul {
+    display: none;
+    position: absolute;
+    top: 1em;
+/*    left: -86px;*/
+    left: 0px;
+    width: 200px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+
+#popupmenu ul#navigation ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#popupmenu ul#navigation ul li {
+    padding-left: 6px;
+    margin: 0px;
+    float: left;
+    position: relative;
+    border: 1px none #f00;
+}
+
+
+#popupmenu ul#navigation li.first#Main ul li,
+#popupmenu ul#navigation li.last#Support ul li,
+#popupmenu ul#navigation li#Development ul li,
+#popupmenu ul#navigation li#Download ul li,
+#popupmenu ul#navigation li#Documentation ul li,
+#popupmenu ul#navigation li.first#Main ul li a,
+#popupmenu ul#navigation li.last#Support ul li a,
+#popupmenu ul#navigation li#Development ul li a,
+#popupmenu ul#navigation li#Documentation ul li a,
+#popupmenu ul#navigation li#Download ul li a
+{
+    display: block;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    float: left;
+    color: #FFF;
+    font-size:12px;
+}
+
+#popupmenu ul#navigation li.first#Main ul li:hover,
+#popupmenu ul#navigation li.last#Support ul li:hover,
+#popupmenu ul#navigation li#Development ul li:hover,
+#popupmenu ul#navigation li#Documentation ul li:hover,
+#popupmenu ul#navigation li#Download ul li:hover
+{
+    display: block;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    float: left;
+    color: #FFF;
+}
+
+#popupmenu a {
+    color: #aaa;
+}
+
+#popupmenu a:hover {
+    color: #fff;
+}
+
+/* MENU AND CONTENT */
+
+div#menu {
+	background-image:url(i/header.jpg);
+	background-position:center 178px;
+	display:block;
+	height:40px;
+	width:1000px;
+}
+
+div#menu ul#navigation {
+	float:left;
+	margin:0px;
+	margin:0px 0px 0px 50px;
+	padding:0px;
+	height:40px;
+	display:block;
+	list-style-type: none;
+	display: block;
+	line-height:25px;
+	background-image: url(i/menu.jpg);
+}
+
+div#menu ul#navigation li#Main,
+div#menu ul#navigation li#Download,
+div#menu ul#navigation li#Development,
+div#menu ul#navigation li#Documentation,
+div#menu ul#navigation li#Support
+{
+	float:left;
+	position:relative;
+	cursor:pointer;
+	margin:0px;
+	padding:0px;
+	margin-left:-1px;
+	font-size:14px;
+	color:#FFF;
+	list-style-type:none;
+	height:40px;
+	background:transparent url(i/separator.jpg) no-repeat scroll top right;
+	display:inline;
+	}
+	
+div#menu ul#navigation li.first#Main {
+	background:transparent url(i/separator.jpg) no-repeat scroll top right;
+	}
+	
+div#menu ul#navigation li.last#Support {
+	background:transparent url(i/mil.jpg) no-repeat scroll top right;
+	}
+
+div#menu ul#navigation li a.mainmenu {
+	font-size:14px;
+	height:40px;
+	display:block;
+	color:#FFF;
+	position:relative;
+	float:left;
+	text-decoration:none;
+	}
+	
+div#menu ul#navigation li.first a.mainmenu {
+	background-image: url(i/mif.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	}
+
+div#menu ul#navigation li a.mainmenu span {
+	display:inline-block;
+	height:100%;
+	position:relative;
+	padding-left:20px;
+	padding-right:20px;
+	}
+	
+div#menu ul#navigation li a.mainmenu:hover,
+div#menu ul#navigation li a.mainmenu:active {
+	position:relative;
+	cursor:pointer;
+	background-image: url(i/menuleft.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	color:#FFF;
+	}
+	
+div#menu ul#navigation li.first a.mainmenu:hover,
+div#menu ul#navigation li.first a.mainmenu:active {
+	position:relative;
+	cursor:pointer;
+	background-image: url(i/mif.gif);
+	background-position: left -46px;
+	background-repeat: no-repeat;
+	color:#FFF;
+	}
+
+div#menu ul#navigation li a.mainmenu:hover span,
+div#menu ul#navigation li a.mainmenu:active span {
+	background-image: url(i/menuright.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	}
+	
+div#menu ul#navigation li.last a.mainmenu:hover span,
+div#menu ul#navigation li.last a.mainmenu:active span {
+	background-image: url(i/mil.jpg);
+	background-position: right -46px;
+	background-repeat: no-repeat;
+	}
+
+body.Development #menu ul#navigation li#Development a.mainmenu,
+body.Documentation #menu ul#navigation li#Documentation a.mainmenu,
+body.Support #menu ul#navigation li#Support a.mainmenu{
+        position:relative;
+        cursor:pointer;
+        background-image: url(i/menuleft.jpg);
+        background-position: top left;
+        background-repeat: no-repeat;
+        color:#FFF;
+}
+
+body.Main div#menu ul#navigation li.first#Main a.mainmenu{
+        position:relative;
+        cursor:pointer;
+        background-image: url(i/mif.gif);
+        background-position: left -46px;
+        background-repeat: no-repeat;
+        color:#FFF;
+}
+
+body.Development div#menu ul#navigation li#Download a.mainmenu span,
+body.Development div#menu ul#navigation li#Development a.mainmenu span,
+body.Documentation div#menu ul#navigation li#Documentation a.mainmenu span,
+body.Support div#menu ul#navigation li#Support a.mainmenu span{
+	background-image: url(i/menuright.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+body.Support div#menu ul#navigation li.last#Support a.mainmenu span{
+	background-image: url(i/mil.jpg);
+	background-position: right -46px;
+	background-repeat: no-repeat;
+}
+
+/* MAIN CONTENT */
+
+div#banner {
+margin-bottom:15px;
+}
+
+div#banner a {	
+width:908px;
+height:165px;
+display: block;
+background-image: url(i/banner.jpg);
+}
+
+div#banner a:hover {	
+background-image: url(i/bannerh.jpg);
+}
+
+div#content
+{
+	width:905px;
+	padding-left:50px;
+	padding-top:30px;
+	min-height: 90px;
+	height: auto !important;
+	height: 90px;
+	display:block;
+	position:relative;
+	z-index:1;
+	text-align: justify;
+}
+
+/* SLIDE SHOW */
+div#slideshow
+{
+	width: 905px;
+        height: 345px;
+	padding-left: -10px;
+	margin-left: -10px;
+	padding-top: -30px;
+	margin-top: -30px;
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+
+.slides {
+	position: relative;
+        display: none;
+}
+
+div#slideshow span
+{
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	bottom: 100px;
+	width: 330px;
+	z-index:1;
+}
+
+div#slideTitle
+{
+	position:relative;
+	font-family:Arial Rounded MT Bold;
+	font-size: 26px;
+	line-height: 30px;
+	color: #2e8bd7;
+	text-align: center;
+	text-shadow: #ffffff 0px 1px 4px;
+}
+
+div#slideText
+{
+	position:relative;
+	top: 20px;
+	font-family:Arial Rounded MT Bold;
+	font-size: 16px;
+	line-height:20px;
+	vertical-align: middle;
+	/*color: #2f2f2f;*/
+	color: #000000;
+	text-align: justify;
+	text-shadow: #ffffff 0px 1px 4px;
+}
+
+div#slideText a
+{
+	font-size: 16px;
+	color: #2e8bd7;
+	text-decoration:none;
+}
+
+a#downloadButton
+{
+	display: none;
+	position:absolute;
+	bottom:30px;
+	left:55px;
+	z-index:1;
+	width:300px;
+	height:60px;
+	line-height:60px;
+	text-decoration:none;
+	text-shadow: #2f2f2f 0px 1px 3px;
+	color: #ffffff;
+	font-family: Arial Rounded MT Bold;
+	font-size: 19px;
+	text-align: center;
+	background-image:url(../../sip-communicator/downloadButton.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+div#bannerControls
+{
+	position:absolute;
+	bottom:20px;
+	right:0px;
+	width:20px;
+	z-index:1;
+}
+
+div#bannerControls a img
+{
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+div#bannerControls a
+{
+	display: none;
+	font-size:0px;
+	margin: 3px;
+	width: 18px;
+	height: auto;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+}
+
+div#bannerControls a.left
+{
+	width:18px; 
+	height:18px;
+	background-image:url(../../sip-communicator/leftArrow.png); 
+}
+
+div#bannerControls a.right
+{
+	width:18px; 
+	height:18px;
+	background-image:url(../../sip-communicator/rightArrow.png); 
+}
+
+div#bannerControls a.dot
+{
+	width:10px; 
+	height:10px;
+	background-image:url(../../sip-communicator/dot.png); 
+}
+
+div#bannerControls a:hover
+{
+	text-decoration:none;
+}
+
+div#bannerControls a.left:hover
+{
+	background-image:url(../../sip-communicator/leftArrowHover.png)
+}
+
+div#bannerControls a.right:hover
+{
+	background-image:url(../../sip-communicator/rightArrowHover.png)
+}
+
+div#bannerControls a.dot:hover
+{
+	background-image:url(../../sip-communicator/dotHover.png)
+}
+
+div#padded {
+	width:930px;
+	display:block;
+	text-align:left;
+	margin:0 auto;
+}
+
+/* FOOTER AND CONTENT */
+
+div#footer {
+	background-image: url(i/footerbgr.jpg);
+	background-repeat: repeat-x;
+	min-width:1000px;
+	width:100%;
+	padding-top:0px;
+	height:200px;
+	text-align:left;
+}
+
+div#footerwrap {
+	width:100%;
+	height: 200px;
+	background-image: url(i/footer.jpg);
+	background-repeat: no-repeat;
+	margin:0 auto;
+	display:block;
+	text-align:left;
+}
+
+div.fcleft {
+	font-family:Verdana,Tahoma,Arial;
+	font-size:11px;
+	float:left;
+	text-align:left;
+	color:#1d1d1d;
+	line-height:20px;
+	padding-left:20px;
+	padding-top:150px;
+}
+
+div.fcleft a {
+	font-family:Verdana,Tahoma,Arial;
+	font-size:11px;
+	color:#000c47;
+	text-decoration:none;
+	}
+	
+div.fcleft a:hover {
+	text-decoration:underline;
+	}
+	
+div.fcright {
+	font-family:Verdana,Tahoma,Arial;
+	font-size:11px;
+	float:right;
+	text-align:left;
+	color:#1d1d1d;
+	line-height:20px;
+	padding-right:20px;
+	padding-top:150px;
+}
+
+div.fcright a {
+	font-family:Verdana,Tahoma,Arial;
+	font-size:11px;
+	color:#000c47;
+	text-decoration:none;
+	}
+	
+div.fcright a:hover {
+	text-decoration:underline;
+	}
+
+div.fccontact {
+        font-family:Verdana,Tahoma,Arial;
+        font-size:11px;
+        float:left;
+        text-align:left;
+        color:#c4c4c4;
+        line-height:18px;
+        padding-left:110px;
+        padding-top:70px;
+}
+
+/* RIGHT BOX */
+
+div#left {
+	display:block;
+	float:left;
+	width:603px;
+	}
+	
+div.three {
+	width:180px;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	border-left:1px solid #b5c8d9;
+	}
+	
+div#right {
+	width:408px;
+	height:auto;
+	float:right;
+}
+
+div#right h1 {
+	background-image: none;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	font-family:Verdana,Tahoma,Arial;
+	color:#E67300;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding-bottom:15px;
+	}
+
+.box {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.box div {
+	margin: 0px;
+}
+
+.box div.topleft {
+	display: block;
+	background: url("i/box-bg.png") top left no-repeat white;
+	padding: 0em 0em 0em 1.0em;
+}
+
+.box div.topright {
+	display: block;
+	background: url("i/box-bg.png") top right no-repeat white;
+	padding: 1.0em;
+	margin: -1.0em 0 0 1.0em;
+}
+
+.box div.bottomleft {
+	display: block;
+	height: 55px;
+	margin-top: -1.0em;
+	background: url("i/box-bg.png") bottom left no-repeat white;
+}
+
+.box div.bottomright {
+	display: block;
+	background: url("i/box-bg.png") bottom right no-repeat white;
+	height: 55px;
+	margin-left: 3.0em;
+}
+
+.box div.topright div {
+	margin-right: 1.5em;
+}
+
+.box h4 {
+	margin-bottom: 0.4em;
+	background-image: none;
+	background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	text-align:center;
+	padding-bottom:15px;
+	}
+
