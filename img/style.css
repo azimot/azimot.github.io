@@ -42,7 +42,7 @@
 }
 
 .notif{	font-size:10px;	color:red; padding-left:5px; }
-#message{ color: red; display: none; font-size: 12px; line-height: 30px; margin-top: 20px; }
+#message{ color: red; display: none; font-size: 12px; line-height: 30px; margin-top: 20px; text-align:left;}
 .accord-header {  padding: 5px 0;  }
 .accord-header:hover { cursor: pointer; }
 .accord-content { display: none; border: 1px dashed gray; border-radius: 5px; cursor: default; margin:0 auto; padding: 5px 95px;height: auto;float: inherit; } 
