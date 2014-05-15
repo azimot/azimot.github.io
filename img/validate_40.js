@@ -51,7 +51,7 @@ $(document).ready(function() {
 });
 function se_ent(_val_){
 	
-	var _product_id = $.trim($("#product_id").html()),
+	var _product_id = $.trim($("#product_id").text()),
 		_valid_email_ = $.trim($("#_valid_email_").val());
 	
 	if(validate("valid-box") && _val_ == "coupid"){					

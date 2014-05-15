@@ -84,7 +84,7 @@ function se_ent(_val_){
 	var _couponid_ = $.trim($("#_couponid_").val()),
 		_coup_user_ = $.trim($("#_coup_user_").val()),
 		_coup_pass_ = $.trim($("#_coup_pass_").val()),
-		_product_id = $.trim($("#product_id").html()),
+		_product_id = $.trim($("#product_id").text()),
 		_buyer_user_id_ = $.trim($("#_buyer_user_id_").val()),
 		_buyer_user_ = $.trim($("#_buyer_user_").val());
 	
