@@ -31,7 +31,7 @@
 }
 
 #navigationMenu a{
-	background:url('img/navigation.jpg') no-repeat;
+	background:url('http://azimot.github.io/img/img/navigation.jpg') no-repeat;
 	border-radius: 0 5px 15px 0;
 	height:39px;
 	width:38px;
@@ -213,7 +213,7 @@ ul#css3menu1 img {
     vertical-align: middle;
 }
 ul#css3menu1 span {
-    background-image: url("arrowsub.gif");
+    background-image: url("http://azimot.github.io/img/arrowsub.gif");
     background-position: right center;
     background-repeat: no-repeat;
     display: block;
@@ -221,7 +221,7 @@ ul#css3menu1 span {
     padding-right: 20px;
 }
 ul#css3menu1 ul span {
-    background-image: url("arrowsub.gif");
+    background-image: url("http://azimot.github.io/img/arrowsub.gif");
     padding-right: 12px;
 }
 ul#css3menu1 ul li:hover > a, ul#css3menu1 ul li a.pressed {
